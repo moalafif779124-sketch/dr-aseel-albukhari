@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجز موعد | د. أصيل البخاري - أخصائي العلاج الطبيعي</title>
+  <meta name="description" content="احجز موعدك مع د. أصيل البخاري أخصائي العلاج الطبيعي. العلاج بالترددات الراديوية، آلام المفاصل، الإصابات الرياضية. مستشفى الحمد إب.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Emergency Banner -->
+  <div class="emergency-banner">
+    <div class="container">
+      <i class="fas fa-ambulance"></i>
+      إستقبال الحالات الطارئة والحوادث وحالات الولادة على مدار 24 ساعة — مستشفى الحمد إب
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-user-doctor"></i></div>
+        <div class="logo-text">
+          د. أصيل البخاري
+          <small>أخصائي العلاج الطبيعي</small>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">عن الدكتور</a>
+        <a href="services.html">الخدمات</a>
+        <a href="contact.html" class="active">حجز موعد</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary">
+        <i class="fas fa-calendar-check"></i> احجز الآن
+      </a>
+      <button class="mobile-toggle" id="mobileToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">عن الدكتور</a>
+    <a href="services.html">الخدمات</a>
+    <a href="contact.html" class="active">حجز موعد</a>
+    <a href="contact.html" class="btn btn-primary">
+      <i class="fas fa-calendar-check"></i> احجز موعدك
+    </a>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>احجز <span>موعدك</span></h1>
+      <p>احجز موعدك مع أخصائي العلاج الطبيعي وإعادة التأهيل د. أصيل البخاري</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-box fade-in">
+            <i class="fas fa-phone"></i>
+            <h4>اتصل بنا</h4>
+            <p><a href="tel:+967779088003">779088003</a></p>
+            <p><a href="tel:+967779299220">779299220</a></p>
+            <p><a href="tel:+96704451665">04451665</a></p>
+            <p><a href="tel:+96704451666">04451666</a></p>
+          </div>
+          <div class="contact-info-box fade-in">
+            <i class="fab fa-whatsapp"></i>
+            <h4>واتساب</h4>
+            <p><a href="https://wa.me/967779088003" target="_blank">779088003</a></p>
+            <p style="font-size: 0.85rem; color: var(--text-light);">انقر للدردشة مباشرة على واتساب</p>
+          </div>
+          <div class="contact-info-box fade-in">
+            <i class="fas fa-location-dot"></i>
+            <h4>العنوان</h4>
+            <p>محافظة إب - امتداد خط السبل</p>
+            <p style="font-size: 0.85rem; color: var(--text-light);">مستشفى الحمد إب</p>
+          </div>
+          <div class="contact-info-box fade-in">
+            <i class="fas fa-hospital"></i>
+            <h4>مستشفى الحمد إب</h4>
+            <p>استقبال الحالات الطارئة 24 ساعة</p>
+            <p style="font-size: 0.85rem; color: var(--text-light);">متميزون لأننا متخصصون</p>
+          </div>
+          <div class="contact-info-box fade-in">
+            <i class="fab fa-facebook-f"></i>
+            <h4>صفحتنا على فيسبوك</h4>
+            <p><a href="https://www.facebook.com/share/17ngmz7hPu/" target="_blank">مستشفى الحمد إب</a></p>
+            <p style="font-size: 0.85rem; color: var(--text-light);">تابعنا للحصول على آخر الأخبار والعروض</p>
+          </div>
+        </div>
+        <div>
+          <div class="contact-form">
+            <h3 style="margin-bottom: 1.5rem; text-align: center;">
+              <i class="fas fa-calendar-check" style="color: var(--primary);"></i>
+              نموذج حجز الموعد
+            </h3>
+            <form id="bookingForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">الاسم الأول</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="أدخل اسمك" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">الاسم الأخير</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="أدخل اسم العائلة" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">رقم الهاتف</label>
+                  <input type="tel" id="phone" name="phone" placeholder="مثال: 779088003" required>
+                </div>
+                <div class="form-group">
+                  <label for="age">العمر</label>
+                  <input type="number" id="age" name="age" placeholder="العمر" min="1" max="120">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="service">الخدمة المطلوبة</label>
+                <select id="service" name="service" required>
+                  <option value="">اختر الخدمة</option>
+                  <option value="radiofrequency">العلاج بالترددات الراديوية</option>
+                  <option value="joint-pain">علاج آلام المفاصل</option>
+                  <option value="sports-injury">تأهيل الإصابات الرياضية</option>
+                  <option value="tendon">علاج التهابات الأوتار</option>
+                  <option value="rehab">إعادة التأهيل بعد العمليات</option>
+                  <option value="muscle">علاج آلام العضلات</option>
+                  <option value="other">أخرى</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="symptoms">وصف الحالة والأعراض</label>
+                <textarea id="symptoms" name="symptoms" placeholder="صف أعراضك وألمك باختصار لنساعدك بشكل أفضل..."></textarea>
+              </div>
+              <div class="form-group">
+                <label for="preferredDate">التاريخ المفضل</label>
+                <input type="date" id="preferredDate" name="preferredDate">
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> إرسال طلب الحجز
+              </button>
+            </form>
+            <div id="formSuccess" style="display: none; text-align: center; padding: 2rem; background: var(--primary-light); border-radius: var(--radius); margin-top: 1.5rem;">
+              <i class="fas fa-circle-check" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+              <h4 style="color: var(--primary); margin-bottom: 0.5rem;">تم إرسال طلبك بنجاح!</h4>
+              <p>سنتواصل معك قريباً لتأكيد موعدك. شكراً لثقتكم بد. أصيل البخاري.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Contact Buttons -->
+  <section class="section-alt" id="quick-contact">
+    <div class="container">
+      <h2 class="section-title">تواصل <span>مباشرة</span></h2>
+      <p class="section-subtitle">اختر الطريقة المناسبة للتواصل معنا فوراً</p>
+      
+      <div class="advantages-grid" style="max-width: 800px; margin: 0 auto;">
+        <a href="tel:+967779088003" class="advantage-box fade-in" style="text-align: center; color: inherit;">
+          <i class="fas fa-phone" style="color: var(--primary);"></i>
+          <h4>اتصل الآن</h4>
+          <p>779088003</p>
+        </a>
+        <a href="https://wa.me/967779088003" target="_blank" class="advantage-box fade-in" style="text-align: center; color: inherit;">
+          <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+          <h4>واتساب</h4>
+          <p>رسالة فورية</p>
+        </a>
+        <a href="https://www.facebook.com/share/17ngmz7hPu/" target="_blank" class="advantage-box fade-in" style="text-align: center; color: inherit;">
+          <i class="fab fa-facebook-f" style="color: #1877F2;"></i>
+          <h4>فيسبوك</h4>
+          <p>صفحتنا الرسمية</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <h2>لا تدع الألم يتحكم بحياتك</h2>
+      <p>احجز موعدك مع د. أصيل البخاري اليوم وابدأ رحلة التعافي. التطوير هو شعارنا وجودة الخدمة الطبية ما نسعى إليه لتلبية حاجات مرضانا.</p>
+      <a href="#contact" class="btn btn-accent btn-lg">
+        <i class="fas fa-calendar-check"></i> احجز موعدك الآن
+      </a>
+      <div style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.8;">
+        <i class="fas fa-phone"></i> 779088003 &nbsp; | &nbsp; <i class="fas fa-phone"></i> 779299220
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-user-doctor"></i></div>
+            <div class="logo-text">د. أصيل البخاري</div>
+          </a>
+          <p>أخصائي العلاج الطبيعي وإعادة التأهيل في مستشفى الحمد إب. نقدم علاجاً متخصصاً بأحدث التقنيات.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/17ngmz7hPu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/967779088003" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+967779088003"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">عن الدكتور</a></li>
+            <li><a href="services.html">الخدمات</a></li>
+            <li><a href="contact.html">حجز موعد</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>الخدمات</h4>
+          <ul>
+            <li><a href="services.html">العلاج بالترددات الراديوية</a></li>
+            <li><a href="services.html">علاج آلام المفاصل</a></li>
+            <li><a href="services.html">تأهيل الإصابات الرياضية</a></li>
+            <li><a href="services.html">إعادة التأهيل</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>تواصل معنا</h4>
+          <ul>
+            <li><i class="fas fa-phone"></i> 779088003</li>
+            <li><i class="fas fa-phone"></i> 779299220</li>
+            <li><i class="fas fa-building"></i> 04451665</li>
+            <li><i class="fas fa-building"></i> 04451666</li>
+            <li><i class="fas fa-location-dot"></i> محافظة إب - امتداد خط السبل</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 د. أصيل البخاري — جميع الحقوق محفوظة | مستشفى الحمد إب</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
