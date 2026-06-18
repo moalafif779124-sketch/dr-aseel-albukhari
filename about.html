@@ -10,13 +10,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .svg-icon { width: 1em; height: 1em; display: inline-block; vertical-align: -0.125em; fill: currentColor; }
+    .service-icon .svg-icon { width: 2.5rem; height: 2.5rem; fill: var(--accent); }
+    .btn .svg-icon { width: 1em; height: 1em; margin-left: 6px; vertical-align: middle; }
+    .footer-social .svg-icon { width: 1rem; height: 1rem; }
+    .footer-contact .svg-icon { width: 1rem; height: 1rem; margin-left: 8px; fill: var(--accent); }
+    .emergency-banner .svg-icon { width: 1em; height: 1em; margin-left: 8px; }
+    .header .logo-icon .svg-icon { width: 1.8rem; height: 1.8rem; fill: white; }
+    .credentials-list .svg-icon { width: 1.1rem; height: 1.1rem; margin-left: 8px; fill: var(--success); vertical-align: middle; }
+    .page-header .svg-icon { width: 1em; height: 1em; margin-left: 8px; }
+    .contact-info-item .svg-icon { width: 1.5rem; height: 1.5rem; fill: var(--accent); }
+  </style>
 </head>
 <body>
 
   <!-- Emergency Banner -->
   <div class="emergency-banner">
     <div class="container">
-      <i class="fas fa-ambulance"></i>
+      <img src="images/icons/heart-pulse.svg" class="svg-icon" alt="">
       إستقبال الحالات الطارئة والحوادث وحالات الولادة على مدار 24 ساعة — مستشفى الحمد إب
     </div>
   </div>
@@ -25,23 +37,24 @@
   <header class="header" id="header">
     <div class="container">
       <a href="index.html" class="logo">
-        <div class="logo-icon"><i class="fas fa-user-doctor"></i></div>
+        <div class="logo-icon"><img src="images/icons/heart-pulse.svg" class="svg-icon" alt=""></div>
         <div class="logo-text">
           د. أصيل البخاري
           <small>أخصائي العلاج الطبيعي</small>
         </div>
       </a>
       <nav class="nav">
+        <a href="intro1.html">التعريف</a>
         <a href="index.html">الرئيسية</a>
         <a href="about.html" class="active">عن الدكتور</a>
         <a href="services.html">الخدمات</a>
         <a href="contact.html">حجز موعد</a>
       </nav>
       <a href="contact.html" class="btn btn-primary">
-        <i class="fas fa-calendar-check"></i> احجز الآن
+        <img src="images/icons/calendar.svg" class="svg-icon" alt=""> احجز الآن
       </a>
       <button class="mobile-toggle" id="mobileToggle">
-        <i class="fas fa-bars"></i>
+        ☰
       </button>
     </div>
   </header>
@@ -49,12 +62,13 @@
   <!-- Mobile Navigation -->
   <div class="mobile-overlay" id="mobileOverlay"></div>
   <nav class="mobile-nav" id="mobileNav">
+    <a href="intro1.html">التعريف</a>
     <a href="index.html">الرئيسية</a>
     <a href="about.html" class="active">عن الدكتور</a>
     <a href="services.html">الخدمات</a>
     <a href="contact.html">حجز موعد</a>
     <a href="contact.html" class="btn btn-primary">
-      <i class="fas fa-calendar-check"></i> احجز موعدك
+      <img src="images/icons/calendar.svg" class="svg-icon" alt=""> احجز موعدك
     </a>
   </nav>
 
@@ -76,9 +90,9 @@
           <div class="title">أخصائي العلاج الطبيعي وإعادة التأهيل</div>
           <div class="badge">بكالوريوس علاج طبيعي</div>
           <div class="contact-quick">
-            <a href="tel:+967779088003"><i class="fas fa-phone"></i> 779088003</a>
-            <a href="https://wa.me/967779088003" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-            <a href="contact.html"><i class="fas fa-calendar-check"></i> حجز موعد</a>
+            <a href="tel:+967779088003"><img src="images/icons/phone.svg" class="svg-icon" alt=""> 779088003</a>
+            <a href="https://wa.me/967779088003" target="_blank"><img src="images/icons/whatsapp.svg" class="svg-icon" alt="WhatsApp"> واتساب</a>
+            <a href="contact.html"><img src="images/icons/calendar.svg" class="svg-icon" alt=""> حجز موعد</a>
           </div>
         </div>
         <div class="doctor-details">
@@ -109,19 +123,19 @@
               <p>أخصائي العلاج الطبيعي وإعادة التأهيل</p>
             </div>
             <div class="info-card">
-              <h4><i class="fas fa-hospital" style="margin-left: 6px;"></i> مكان العمل</h4>
+              <h4><img src="images/icons/heart-pulse.svg" class="svg-icon" alt=""> مكان العمل</h4>
               <p>مستشفى الحمد إب</p>
             </div>
             <div class="info-card">
-              <h4><i class="fas fa-location-dot" style="margin-left: 6px;"></i> الموقع</h4>
+              <h4><img src="images/icons/certificate.svg" class="svg-icon" alt=""> الموقع</h4>
               <p>محافظة إب - امتداد خط السبل</p>
             </div>
             <div class="info-card">
-              <h4><i class="fas fa-microscope" style="margin-left: 6px;"></i> التقنية المتخصصة</h4>
+              <h4><img src="images/icons/microscope.svg" class="svg-icon" alt=""> التقنية المتخصصة</h4>
               <p>العلاج بالترددات الراديوية</p>
             </div>
             <div class="info-card">
-              <h4><i class="fas fa-clock" style="margin-left: 6px;"></i> ساعات العمل</h4>
+              <h4><img src="images/icons/calendar.svg" class="svg-icon" alt=""> ساعات العمل</h4>
               <p>السبت - الخميس (أوقات متنوعة)</p>
             </div>
           </div>
@@ -175,7 +189,7 @@
       
       <div class="hospital-info fade-in">
         <div class="hospital-info-content">
-          <h4><i class="fas fa-hospital" style="color: var(--primary); margin-left: 8px;"></i> مستشفى الحمد إب</h4>
+          <h4><img src="images/icons/heart-pulse.svg" class="svg-icon" alt=""> مستشفى الحمد إب</h4>
           <p>مستشفى الحمد إب هي واحدة من المستشفيات الرائدة في محافظة إب، تقدم خدمات طبية متكاملة على مدار 24 ساعة. يعمل في المستشفى فريق طبي متخصص في مختلف المجالات الطبية.</p>
           <p><strong>العنوان:</strong> محافظة إب - امتداد خط السبل</p>
           <p><strong>الهاتف:</strong> 04451665 / 04451666</p>
@@ -191,10 +205,10 @@
       <h2>تواصل معنا اليوم</h2>
       <p>احجز موعدك مع د. أصيل البخاري وابدأ رحلة التعافي. نحن هنا لمساعدتك على استعادة حياتك الطبيعية بدون ألم.</p>
       <a href="contact.html" class="btn btn-accent btn-lg">
-        <i class="fas fa-calendar-check"></i> احجز موعدك الآن
+        <img src="images/icons/calendar.svg" class="svg-icon" alt=""> احجز موعدك الآن
       </a>
       <div style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.8;">
-        <i class="fas fa-phone"></i> 779088003 &nbsp; | &nbsp; <i class="fas fa-phone"></i> 779299220
+        <img src="images/icons/phone.svg" class="svg-icon" alt=""> 779088003 &nbsp; | &nbsp; <img src="images/icons/phone.svg" class="svg-icon" alt=""> 779299220
       </div>
     </div>
   </section>
@@ -205,14 +219,14 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <div class="logo-icon"><i class="fas fa-user-doctor"></i></div>
+            <div class="logo-icon"><img src="images/icons/heart-pulse.svg" class="svg-icon" alt=""></div>
             <div class="logo-text">د. أصيل البخاري</div>
           </a>
           <p>أخصائي العلاج الطبيعي وإعادة التأهيل في مستشفى الحمد إب. نقدم علاجاً متخصصاً بأحدث التقنيات.</p>
           <div class="footer-social">
-            <a href="https://www.facebook.com/share/17ngmz7hPu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/967779088003" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="tel:+967779088003"><i class="fas fa-phone"></i></a>
+            <a href="https://www.facebook.com/share/17ngmz7hPu/" target="_blank"><img src="images/icons/facebook.svg" class="svg-icon" alt="Facebook"></a>
+            <a href="https://wa.me/967779088003" target="_blank"><img src="images/icons/whatsapp.svg" class="svg-icon" alt="WhatsApp"></a>
+            <a href="tel:+967779088003"><img src="images/icons/phone.svg" class="svg-icon" alt=""></a>
           </div>
         </div>
         <div class="footer-links">
@@ -236,11 +250,11 @@
         <div class="footer-contact">
           <h4>تواصل معنا</h4>
           <ul>
-            <li><i class="fas fa-phone"></i> 779088003</li>
-            <li><i class="fas fa-phone"></i> 779299220</li>
-            <li><i class="fas fa-building"></i> 04451665</li>
-            <li><i class="fas fa-building"></i> 04451666</li>
-            <li><i class="fas fa-location-dot"></i> محافظة إب - امتداد خط السبل</li>
+            <li><img src="images/icons/phone.svg" class="svg-icon" alt=""> 779088003</li>
+            <li><img src="images/icons/phone.svg" class="svg-icon" alt=""> 779299220</li>
+            <li><img src="images/icons/heart-pulse.svg" class="svg-icon" alt=""> 04451665</li>
+            <li><img src="images/icons/heart-pulse.svg" class="svg-icon" alt=""> 04451666</li>
+            <li><img src="images/icons/certificate.svg" class="svg-icon" alt=""> محافظة إب - امتداد خط السبل</li>
           </ul>
         </div>
       </div>
@@ -251,7 +265,7 @@
   </footer>
 
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
+    <img src="images/icons/arrow-up.svg" class="svg-icon" alt="">
   </button>
 
   <script src="js/main.js"></script>

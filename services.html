@@ -10,13 +10,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .svg-icon { width: 1em; height: 1em; display: inline-block; vertical-align: -0.125em; fill: currentColor; }
+    .service-icon .svg-icon { width: 2.5rem; height: 2.5rem; fill: var(--accent); }
+    .btn .svg-icon { width: 1em; height: 1em; margin-left: 6px; vertical-align: middle; }
+    .footer-social .svg-icon { width: 1rem; height: 1rem; }
+    .footer-contact .svg-icon { width: 1rem; height: 1rem; margin-left: 8px; fill: var(--accent); }
+    .emergency-banner .svg-icon { width: 1em; height: 1em; margin-left: 8px; }
+    .header .logo-icon .svg-icon { width: 1.8rem; height: 1.8rem; fill: white; }
+    .credentials-list .svg-icon { width: 1.1rem; height: 1.1rem; margin-left: 8px; fill: var(--success); vertical-align: middle; }
+    .page-header .svg-icon { width: 1em; height: 1em; margin-left: 8px; }
+  </style>
 </head>
 <body>
 
   <!-- Emergency Banner -->
   <div class="emergency-banner">
     <div class="container">
-      <i class="fas fa-ambulance"></i>
+      <img src="images/icons/heart-pulse.svg" class="svg-icon" alt="">
       إستقبال الحالات الطارئة والحوادث وحالات الولادة على مدار 24 ساعة — مستشفى الحمد إب
     </div>
   </div>
@@ -25,23 +36,24 @@
   <header class="header" id="header">
     <div class="container">
       <a href="index.html" class="logo">
-        <div class="logo-icon"><i class="fas fa-user-doctor"></i></div>
+        <div class="logo-icon"><img src="images/icons/heart-pulse.svg" class="svg-icon" alt=""></div>
         <div class="logo-text">
           د. أصيل البخاري
           <small>أخصائي العلاج الطبيعي</small>
         </div>
       </a>
       <nav class="nav">
+        <a href="intro1.html">التعريف</a>
         <a href="index.html">الرئيسية</a>
         <a href="about.html">عن الدكتور</a>
         <a href="services.html" class="active">الخدمات</a>
         <a href="contact.html">حجز موعد</a>
       </nav>
       <a href="contact.html" class="btn btn-primary">
-        <i class="fas fa-calendar-check"></i> احجز الآن
+        <img src="images/icons/calendar.svg" class="svg-icon" alt=""> احجز الآن
       </a>
       <button class="mobile-toggle" id="mobileToggle">
-        <i class="fas fa-bars"></i>
+        ☰
       </button>
     </div>
   </header>
@@ -49,12 +61,13 @@
   <!-- Mobile Navigation -->
   <div class="mobile-overlay" id="mobileOverlay"></div>
   <nav class="mobile-nav" id="mobileNav">
+    <a href="intro1.html">التعريف</a>
     <a href="index.html">الرئيسية</a>
     <a href="about.html">عن الدكتور</a>
     <a href="services.html" class="active">الخدمات</a>
     <a href="contact.html">حجز موعد</a>
     <a href="contact.html" class="btn btn-primary">
-      <i class="fas fa-calendar-check"></i> احجز موعدك
+      <img src="images/icons/calendar.svg" class="svg-icon" alt=""> احجز موعدك
     </a>
   </nav>
 
@@ -88,10 +101,10 @@
             استرخاء العضلات، تخفيف الألم، تحسين الدورة الدموية، وتسريع عملية التعافي الطبيعي للجسم.
           </p>
           <ul class="credentials-list">
-            <li><i class="fas fa-check-circle"></i> علاج بدون تدخل جراحي</li>
-            <li><i class="fas fa-check-circle"></i> جلسات غير مؤلمة ومريحة</li>
-            <li><i class="fas fa-check-circle"></i> نتائج فورية من الجلسة الأولى</li>
-            <li><i class="fas fa-check-circle"></i> مناسب للطبقات السطحية والعميقة</li>
+            <li><img src="images/icons/check-circle.svg" class="svg-icon" alt=""> علاج بدون تدخل جراحي</li>
+            <li><img src="images/icons/check-circle.svg" class="svg-icon" alt=""> جلسات غير مؤلمة ومريحة</li>
+            <li><img src="images/icons/check-circle.svg" class="svg-icon" alt=""> نتائج فورية من الجلسة الأولى</li>
+            <li><img src="images/icons/check-circle.svg" class="svg-icon" alt=""> مناسب للطبقات السطحية والعميقة</li>
           </ul>
         </div>
       </div>
@@ -113,7 +126,7 @@
           </div>
         </div>
         <div class="condition-item fade-in">
-          <i class="fas fa-person-running"></i>
+          <img src="images/icons/running.svg" class="svg-icon" alt="">
           <div>
             <h4>الإصابات الرياضية</h4>
             <p>تستخدم في تسريع التعافي من الالتواءات وتمزقات الأنسجة الرخوة. تساعد الرياضيين على العودة للنشاط بشكل أسرع.</p>
@@ -179,7 +192,7 @@
           <p>جلسات علاجية قصيرة (20-30 دقيقة) لا تحتاج لفترة نقاهة أو راحة بعد العلاج.</p>
         </div>
         <div class="advantage-box fade-in">
-          <i class="fas fa-heart-pulse"></i>
+          <img src="images/icons/heart-pulse.svg" class="svg-icon" alt="">
           <h4>تحسين الدورة الدموية</h4>
           <p>تنشط الدورة الدموية في المنطقة المعالجة مما يسرع من التعافي ويغذي الأنسجة.</p>
         </div>
@@ -200,27 +213,27 @@
       
       <div class="services-grid">
         <div class="service-card fade-in">
-          <div class="service-icon"><i class="fas fa-bone"></i></div>
+          <div class="service-icon"><img src="images/icons/bone.svg" class="svg-icon" alt=""></div>
           <h3>علاج آلام المفاصل</h3>
           <p>علاج متخصص لآلام الرقبة، أسفل الظهر، مفصل الركبة والورك باستخدام تقنيات علاجية متعددة.</p>
         </div>
         <div class="service-card fade-in">
-          <div class="service-icon"><i class="fas fa-person-running"></i></div>
+          <div class="service-icon"><img src="images/icons/running.svg" class="svg-icon" alt=""></div>
           <h3>تأهيل الإصابات الرياضية</h3>
           <p>برامج تأهيل متخصصة للتعافي من الالتواءات والتمزقات وإعادة الرياضيين للمنافسة بقوة.</p>
         </div>
         <div class="service-card fade-in">
-          <div class="service-icon"><i class="fas fa-hand-holding-medical"></i></div>
+          <div class="service-icon"><img src="images/icons/medical-hand.svg" class="svg-icon" alt=""></div>
           <h3>إعادة التأهيل بعد العمليات</h3>
           <p>برامج تأهيل شاملة بعد العمليات الجراحية والحوادث لاستعادة الحركة والقوة بشكل تدريجي.</p>
         </div>
         <div class="service-card fade-in">
-          <div class="service-icon"><i class="fas fa-spa"></i></div>
+          <div class="service-icon"><img src="images/icons/spa.svg" class="svg-icon" alt=""></div>
           <h3>علاج التهابات الأوتار</h3>
           <p>علاج التهاب اللفافة الأخمصية، مرفق التنس، والتهابات الأوتار المزمنة بفعالية.</p>
         </div>
         <div class="service-card fade-in">
-          <div class="service-icon"><i class="fas fa-child-reaching"></i></div>
+          <div class="service-icon"><img src="images/icons/child.svg" class="svg-icon" alt=""></div>
           <h3>علاج آلام العضلات</h3>
           <p>تخفيف آلام العضلات المزمنة والتشنجات باستخدام تقنيات علاجية متعددة وبرامج مخصصة.</p>
         </div>
@@ -239,10 +252,10 @@
       <h2>هل تعاني من ألم مزمن؟</h2>
       <p>لا تنتظر أكثر. احجز موعدك مع د. أصيل البخاري واستفد من العلاج بالترددات الراديوية المتطورة. التطوير هو شعارنا وجودة الخدمة الطبية ما نسعى إليه.</p>
       <a href="contact.html" class="btn btn-accent btn-lg">
-        <i class="fas fa-calendar-check"></i> احجز موعدك الآن
+        <img src="images/icons/calendar.svg" class="svg-icon" alt=""> احجز موعدك الآن
       </a>
       <div style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.8;">
-        <i class="fas fa-phone"></i> 779088003 &nbsp; | &nbsp; <i class="fas fa-phone"></i> 779299220
+        <img src="images/icons/phone.svg" class="svg-icon" alt=""> 779088003 &nbsp; | &nbsp; <img src="images/icons/phone.svg" class="svg-icon" alt=""> 779299220
       </div>
     </div>
   </section>
@@ -253,14 +266,14 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <div class="logo-icon"><i class="fas fa-user-doctor"></i></div>
+            <div class="logo-icon"><img src="images/icons/heart-pulse.svg" class="svg-icon" alt=""></div>
             <div class="logo-text">د. أصيل البخاري</div>
           </a>
           <p>أخصائي العلاج الطبيعي وإعادة التأهيل في مستشفى الحمد إب. نقدم علاجاً متخصصاً بأحدث التقنيات.</p>
           <div class="footer-social">
-            <a href="https://www.facebook.com/share/17ngmz7hPu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/967779088003" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="tel:+967779088003"><i class="fas fa-phone"></i></a>
+            <a href="https://www.facebook.com/share/17ngmz7hPu/" target="_blank"><img src="images/icons/facebook.svg" class="svg-icon" alt="Facebook"></a>
+            <a href="https://wa.me/967779088003" target="_blank"><img src="images/icons/whatsapp.svg" class="svg-icon" alt="WhatsApp"></a>
+            <a href="tel:+967779088003"><img src="images/icons/phone.svg" class="svg-icon" alt=""></a>
           </div>
         </div>
         <div class="footer-links">
@@ -284,11 +297,11 @@
         <div class="footer-contact">
           <h4>تواصل معنا</h4>
           <ul>
-            <li><i class="fas fa-phone"></i> 779088003</li>
-            <li><i class="fas fa-phone"></i> 779299220</li>
-            <li><i class="fas fa-building"></i> 04451665</li>
-            <li><i class="fas fa-building"></i> 04451666</li>
-            <li><i class="fas fa-location-dot"></i> محافظة إب - امتداد خط السبل</li>
+            <li><img src="images/icons/phone.svg" class="svg-icon" alt=""> 779088003</li>
+            <li><img src="images/icons/phone.svg" class="svg-icon" alt=""> 779299220</li>
+            <li><img src="images/icons/heart-pulse.svg" class="svg-icon" alt=""> 04451665</li>
+            <li><img src="images/icons/heart-pulse.svg" class="svg-icon" alt=""> 04451666</li>
+            <li><img src="images/icons/certificate.svg" class="svg-icon" alt=""> محافظة إب - امتداد خط السبل</li>
           </ul>
         </div>
       </div>
@@ -299,7 +312,7 @@
   </footer>
 
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
+    <img src="images/icons/arrow-up.svg" class="svg-icon" alt="">
   </button>
 
   <script src="js/main.js"></script>

@@ -3,3 +3,6 @@ node_modules/
 .env
 .DS_Store
 Thumbs.db
+photo_*.jpg
+Capture.PNG
+*.mp4
