@@ -207,4 +207,66 @@ document.addEventListener('DOMContentLoaded', function () {
     requestAnimationFrame(update);
   }
 
+  /* ---- Services Slider ---- */
+  const sliderTrack = document.getElementById('sliderTrack');
+  const sliderDots = document.getElementById('sliderDots');
+  const sliderPrev = document.getElementById('sliderPrev');
+  const sliderNext = document.getElementById('sliderNext');
+
+  if (sliderTrack && sliderDots) {
+    let currentSlide = 0;
+    const totalSlides = sliderTrack.children.length;
+    let autoSlideInterval;
+
+    function goToSlide(index) {
+      if (index < 0) index = totalSlides - 1;
+      if (index >= totalSlides) index = 0;
+      currentSlide = index;
+      sliderTrack.style.transform = 'translateX(' + (index * 100) + '%)';
+      
+      // Update dots
+      const dots = sliderDots.querySelectorAll('.slider-dot');
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      goToSlide(currentSlide - 1);
+    }
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(nextSlide, 4000);
+    }
+
+    function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+    }
+
+    // Click handlers
+    if (sliderPrev) sliderPrev.addEventListener('click', () => { stopAutoSlide(); prevSlide(); startAutoSlide(); });
+    if (sliderNext) sliderNext.addEventListener('click', () => { stopAutoSlide(); nextSlide(); startAutoSlide(); });
+
+    // Dot clicks
+    const dots = sliderDots.querySelectorAll('.slider-dot');
+    dots.forEach((dot) => {
+      dot.addEventListener('click', function () {
+        stopAutoSlide();
+        goToSlide(parseInt(this.getAttribute('data-index')));
+        startAutoSlide();
+      });
+    });
+
+    // Pause on hover
+    sliderTrack.addEventListener('mouseenter', stopAutoSlide);
+    sliderTrack.addEventListener('mouseleave', startAutoSlide);
+
+    // Start auto slide
+    startAutoSlide();
+  }
+
 });
