@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0066CC">
+  <link rel="manifest" href="manifest.json">
   <title>عن الدكتور | د. أصيل البخاري - أخصائي العلاج الطبيعي</title>
   <meta name="description" content="تعرف على الدكتور أصيل البخاري - أخصائي العلاج الطبيعي وإعادة التأهيل. بكالوريوس علاج طبيعي، خبرة واسعة في علاج آلام المفاصل والإصابات الرياضية.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,16 +60,47 @@
     </div>
   </header>
 
-  <!-- Mobile Navigation -->
+  <!-- Mobile Navigation (Drawer) -->
   <div class="mobile-overlay" id="mobileOverlay"></div>
-  <nav class="mobile-nav" id="mobileNav">
-    <a href="index.html">الرئيسية</a>
-    <a href="about.html" class="active">عن الدكتور</a>
-    <a href="services.html">الخدمات</a>
-    <a href="contact.html">حجز موعد</a>
-    <a href="contact.html" class="btn btn-primary">
-      <img src="images/icons/calendar.svg" class="svg-icon" alt=""> احجز موعدك
-    </a>
+  <nav class="mobile-nav drawer" id="mobileNav">
+    <div class="drawer-header">
+      <img src="images/dr-aseel-photo.jpg" alt="د. أصيل البخاري" class="drawer-avatar">
+      <div>
+        <h3>د. أصيل البخاري</h3>
+        <span>أخصائي العلاج الطبيعي وإعادة التأهيل</span>
+      </div>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V10"/></svg>
+        الرئيسية
+      </a>
+      <a href="about.html" class="active">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        عن الدكتور
+      </a>
+      <a href="services.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        الخدمات والحالات
+      </a>
+      <a href="contact.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        حجز موعد
+      </a>
+    </div>
+    <div class="drawer-footer">
+      <button class="theme-toggle" id="themeToggle">
+        <span class="theme-toggle-icon"></span>
+        <span class="theme-toggle-label">الوضع الليلي</span>
+      </button>
+      <a href="tel:+967779088003" class="drawer-call">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        اتصل الآن
+      </a>
+      <a href="https://wa.me/967779088003" target="_blank" class="drawer-wa">
+        <img src="images/icons/whatsapp.svg" class="svg-icon" alt=""> واتساب مباشر
+      </a>
+    </div>
   </nav>
 
   <!-- Page Header -->
@@ -113,11 +146,11 @@
           
           <div class="info-cards">
             <div class="info-card">
-              <h4><i class="fas fa-graduation-cap" style="margin-left: 6px;"></i> المؤهل العلمي</h4>
+              <h4><span class="ci-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></span> المؤهل العلمي</h4>
               <p>بكالوريوس في العلاج الطبيعي</p>
             </div>
             <div class="info-card">
-              <h4><i class="fas fa-briefcase" style="margin-left: 6px;"></i> التخصص</h4>
+              <h4><span class="ci-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span> التخصص</h4>
               <p>أخصائي العلاج الطبيعي وإعادة التأهيل</p>
             </div>
             <div class="info-card">
@@ -161,11 +194,11 @@
             الطبية لضمان تقديم أفضل رعاية ممكنة.
           </p>
           <ul class="credentials-list">
-            <li><i class="fas fa-heart"></i> رعاية شخصية مخصصة لكل مريض</li>
-            <li><i class="fas fa-heart"></i> أحدث التقنيات والأجهزة الطبية</li>
-            <li><i class="fas fa-heart"></i> متابعة مستمرة لتقييم التقدم</li>
-            <li><i class="fas fa-heart"></i> بيئة علاجية مريحة وآمنة</li>
-            <li><i class="fas fa-heart"></i> فريق طبي متعاون ومحترف</li>
+            <li><span class="ci-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span> رعاية شخصية مخصصة لكل مريض</li>
+            <li><span class="ci-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span> أحدث التقنيات والأجهزة الطبية</li>
+            <li><span class="ci-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span> متابعة مستمرة لتقييم التقدم</li>
+            <li><span class="ci-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span> بيئة علاجية مريحة وآمنة</li>
+            <li><span class="ci-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span> فريق طبي متعاون ومحترف</li>
           </ul>
         </div>
         <div class="about-img" style="order: 1;">
@@ -261,6 +294,39 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="fab-container" id="fabContainer">
+    <a href="https://wa.me/967779088003" target="_blank" class="fab fab-action fab-wa" aria-label="واتساب">
+      <img src="images/icons/whatsapp.svg" class="svg-icon" alt="واتساب">
+    </a>
+    <a href="tel:+967779088003" class="fab fab-action fab-call" aria-label="اتصال">
+      <img src="images/icons/phone.svg" class="svg-icon" alt="اتصال">
+    </a>
+    <button class="fab fab-main" id="fabMain" aria-label="تواصل سريع">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+  </div>
+
+  <!-- Bottom Navigation (mobile) -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="index.html" class="bn-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V10"/></svg>
+      الرئيسية
+    </a>
+    <a href="services.html" class="bn-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      الخدمات والحالات
+    </a>
+    <a href="contact.html" class="bn-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      حجز موعد
+    </a>
+    <a href="about.html" class="bn-item active">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      التواصل والعيادة
+    </a>
+  </nav>
 
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <img src="images/icons/arrow-up.svg" class="svg-icon" alt="">

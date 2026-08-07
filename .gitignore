@@ -7,3 +7,11 @@ photo_*.jpg
 Capture.PNG
 *.mp4
 .codegraph/
+node_modules/
+android/
+www/
+capacitor.config.json
+package.json
+package-lock.json
+*.apk
+local.properties

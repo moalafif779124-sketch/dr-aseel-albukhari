@@ -1,0 +1,27 @@
+{
+  "name": "د. أصيل البخاري — العلاج الطبيعي وإعادة التأهيل",
+  "short_name": "د. أصيل البخاري",
+  "description": "أخصائي العلاج الطبيعي وإعادة التأهيل في مستشفى الحمد إب — العلاج بالترددات الراديوية، آلام المفاصل، الإصابات الرياضية",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "index.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#0066CC",
+  "icons": [
+    {
+      "src": "images/icons/heart-pulse.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "images/hero.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

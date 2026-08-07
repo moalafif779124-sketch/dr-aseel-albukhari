@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0066CC">
+  <link rel="manifest" href="manifest.json">
   <title>د. أصيل البخاري | أخصائي العلاج الطبيعي وإعادة التأهيل</title>
   <meta name="description" content="الدكتور أصيل البخاري - أخصائي العلاج الطبيعي وإعادة التأهيل في مستشفى الحمد إب. العلاج بالترددات الراديوية، آلام المفاصل، الإصابات الرياضية، إعادة التأهيل.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,19 +68,47 @@
     </div>
   </header>
 
-  <!-- Mobile Navigation -->
+  <!-- Mobile Navigation (Drawer) -->
   <div class="mobile-overlay" id="mobileOverlay"></div>
-  <nav class="mobile-nav" id="mobileNav">
-    <a href="index.html" class="active">الرئيسية</a>
-    <a href="about.html">عن الدكتور</a>
-    <a href="services.html">الخدمات</a>
-    <a href="contact.html">حجز موعد</a>
-    <a href="about.html">عن الدكتور</a>
-    <a href="services.html">الخدمات</a>
-    <a href="contact.html">حجز موعد</a>
-    <a href="contact.html" class="btn btn-primary">
-      <img src="images/icons/calendar.svg" class="svg-icon" alt=""> احجز موعدك
-    </a>
+  <nav class="mobile-nav drawer" id="mobileNav">
+    <div class="drawer-header">
+      <img src="images/dr-aseel-photo.jpg" alt="د. أصيل البخاري" class="drawer-avatar">
+      <div>
+        <h3>د. أصيل البخاري</h3>
+        <span>أخصائي العلاج الطبيعي وإعادة التأهيل</span>
+      </div>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html" class="active">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V10"/></svg>
+        الرئيسية
+      </a>
+      <a href="about.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        عن الدكتور
+      </a>
+      <a href="services.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        الخدمات والحالات
+      </a>
+      <a href="contact.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        حجز موعد
+      </a>
+    </div>
+    <div class="drawer-footer">
+      <button class="theme-toggle" id="themeToggle">
+        <span class="theme-toggle-icon"></span>
+        <span class="theme-toggle-label">الوضع الليلي</span>
+      </button>
+      <a href="tel:+967779088003" class="drawer-call">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        اتصل الآن
+      </a>
+      <a href="https://wa.me/967779088003" target="_blank" class="drawer-wa">
+        <img src="images/icons/whatsapp.svg" class="svg-icon" alt=""> واتساب مباشر
+      </a>
+    </div>
   </nav>
 
   <!-- Hero Section -->
@@ -120,16 +150,42 @@
           </div>
         </div>
       </div>
-      <div class="hero-image">
-        <img src="images/hero.jpg" alt="د. أصيل البخاري - أخصائي العلاج الطبيعي">
-        <div class="floating-card fc-1">
-          <img src="images/icons/certificate.svg" class="svg-icon" alt="">
-          <div>بكالوريوس علاج طبيعي</div>
+      <div class="doctor-card" id="doctorCard">
+        <div class="dc-avatar-wrap">
+          <div class="dc-avatar">
+            <img src="images/dr-aseel-photo.jpg" alt="د. أصيل البخاري - أخصائي العلاج الطبيعي">
+          </div>
+          <span class="dc-online"><i></i> متاح الآن</span>
         </div>
-        <div class="floating-card fc-2">
-<img src="images/icons/heart-pulse.svg" class="svg-icon" alt="">
-          <div>تقنية آمنة وغير مؤلمة</div>
+        <span class="dc-flag">أخصائي معتمد — مستشفى الحمد إب</span>
+        <h3 class="dc-name">د. أصيل البخاري</h3>
+        <p class="dc-role">أخصائي العلاج الطبيعي وإعادة التأهيل</p>
+        <div class="dc-badges">
+          <span class="dc-badge"><img src="images/icons/certificate.svg" class="svg-icon" alt=""> بكالوريوس علاج طبيعي</span>
+          <span class="dc-badge"><img src="images/icons/wave-square.svg" class="svg-icon" alt=""> ترددات راديوية</span>
         </div>
+        <div class="dc-stats">
+          <div><strong>+5</strong><span>سنوات خبرة</span></div>
+          <div><strong>1000+</strong><span>حالة ناجحة</span></div>
+          <div><strong>24/7</strong><span>طوارئ</span></div>
+        </div>
+        <div class="dc-actions">
+          <a href="contact.html" class="btn btn-accent">
+            <img src="images/icons/calendar.svg" class="svg-icon" alt=""> احجز موعد
+          </a>
+          <a href="https://wa.me/967779088003" target="_blank" class="btn dc-btn-wa">
+            <img src="images/icons/whatsapp.svg" class="svg-icon" alt=""> واتساب
+          </a>
+          <a href="tel:+967779088003" class="btn dc-btn-call">
+            <img src="images/icons/phone.svg" class="svg-icon" alt=""> اتصال
+          </a>
+          <a href="services.html" class="btn btn-outline">
+            <img src="images/icons/microscope.svg" class="svg-icon" alt=""> الخدمات
+          </a>
+        </div>
+        <p class="dc-loc">
+          <img src="images/icons/heart-pulse.svg" class="svg-icon" alt=""> محافظة إب — امتداد خط السبل
+        </p>
       </div>
     </div>
   </section>
@@ -246,6 +302,63 @@
           </div>
         </div>
       </div>
+
+      <!-- Interactive Body Map -->
+      <div class="body-map-wrap fade-in">
+        <div class="body-map">
+          <svg viewBox="0 0 300 330" role="img" aria-label="خريطة جسم تفاعلية — اضغط على منطقة الألم">
+            <!-- head -->
+            <circle class="body-figure-part" cx="150" cy="38" r="22"/>
+            <!-- neck -->
+            <rect class="body-figure-part" x="141" y="60" width="18" height="16" rx="6"/>
+            <!-- shoulders + torso -->
+            <path class="body-figure-part" d="M112 92 h30 l8 -16 c3 -6 9 -6 12 0 l8 16 h30 v80 c0 9 -7 16 -16 16 h-56 c-9 0 -16 -7 -16 -16 z"/>
+            <!-- spine -->
+            <line class="spine-line" x1="150" y1="110" x2="150" y2="172"/>
+            <!-- arms -->
+            <rect class="body-figure-part" x="97" y="94" width="19" height="112" rx="9"/>
+            <rect class="body-figure-part" x="184" y="94" width="19" height="112" rx="9"/>
+            <!-- hands -->
+            <circle class="body-figure-part" cx="106.5" cy="212" r="9"/>
+            <circle class="body-figure-part" cx="193.5" cy="212" r="9"/>
+            <!-- legs -->
+            <rect class="body-figure-part" x="122" y="192" width="24" height="112" rx="11"/>
+            <rect class="body-figure-part" x="154" y="192" width="24" height="112" rx="11"/>
+            <!-- feet -->
+            <rect class="body-figure-part" x="116" y="304" width="36" height="14" rx="7"/>
+            <rect class="body-figure-part" x="148" y="304" width="36" height="14" rx="7"/>
+            <!-- hotspots -->
+            <circle class="hotspot" data-part="neck" cx="150" cy="72" r="14"/>
+            <circle class="hotspot" data-part="shoulder" cx="112" cy="104" r="14"/>
+            <circle class="hotspot" data-part="shoulder" cx="188" cy="104" r="14"/>
+            <circle class="hotspot" data-part="back" cx="150" cy="140" r="15"/>
+            <circle class="hotspot" data-part="elbow" cx="106.5" cy="160" r="13"/>
+            <circle class="hotspot" data-part="elbow" cx="193.5" cy="160" r="13"/>
+            <circle class="hotspot" data-part="hip" cx="150" cy="200" r="15"/>
+            <circle class="hotspot" data-part="knee" cx="134" cy="258" r="13"/>
+            <circle class="hotspot" data-part="knee" cx="166" cy="258" r="13"/>
+            <circle class="hotspot" data-part="foot" cx="134" cy="311" r="12"/>
+            <circle class="hotspot" data-part="foot" cx="166" cy="311" r="12"/>
+          </svg>
+        </div>
+        <div class="body-map-panel">
+          <h4>📍 اضغط على مكان الألم</h4>
+          <div class="body-parts">
+            <button class="body-part" data-part="neck">الرقبة</button>
+            <button class="body-part" data-part="shoulder">الكتف</button>
+            <button class="body-part" data-part="back">الظهر</button>
+            <button class="body-part" data-part="elbow">المرفق</button>
+            <button class="body-part" data-part="hip">الورك</button>
+            <button class="body-part" data-part="knee">الركبة</button>
+            <button class="body-part" data-part="foot">الكعب</button>
+          </div>
+          <div class="body-detail" id="bodyDetail">
+            <h5 id="bdTitle">آلام الرقبة</h5>
+            <p id="bdText">علاج آلام الرقبة الناتجة عن التشنجات العضلية والشد والانزلاق الغضروفي العنقي، مع استرخاء فوري للعضلات.</p>
+            <a href="contact.html">احجز استشارتك الآن ←</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -300,10 +413,10 @@
             </div>
           </div>
           <button class="slider-nav prev" id="sliderPrev" aria-label="الصورة السابقة">
-            <i class="fas fa-chevron-right"></i>
+            <span class="ci-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span>
           </button>
           <button class="slider-nav next" id="sliderNext" aria-label="الصورة التالية">
-            <i class="fas fa-chevron-left"></i>
+            <span class="ci-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></span>
           </button>
         </div>
         <div class="slider-dots" id="sliderDots">
@@ -349,7 +462,7 @@
       
       <div class="hospital-info fade-in">
         <div class="hospital-info-content">
-          <h4><i class="fas fa-hospital" style="color: var(--primary); margin-left: 8px;"></i> مستشفى الحمد إب</h4>
+          <h4><span class="ci-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 11h.01M15 11h.01M12 11h.01"/></svg></span> مستشفى الحمد إب</h4>
           <p>نحن نسعى دائماً إلى تطوير تقديم الخدمات الطبية بأعلى مستوى. وجودة الخدمة الطبية ما نسعى إليه لتلبية حاجات مرضانا.</p>
           <p><strong>العنوان:</strong> محافظة إب - امتداد خط السبل</p>
           <p><strong>استقبال الطوارئ:</strong> 24 ساعة على مدار الأسبوع</p>
@@ -387,8 +500,8 @@
       </div>
 
       <!-- Video Section -->
-      <h3 style="text-align: center; margin-top: 3rem; margin-bottom: 1.5rem; font-size: 1.5rem;">
-        <i class="fas fa-video" style="color: var(--accent); margin-left: 8px;"></i>
+      <h3 class="video-heading" style="text-align: center; margin-top: 3rem; margin-bottom: 1.5rem; font-size: 1.5rem;">
+        <span class="ci-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>
         فيديوهات تعليمية وتعريفية
       </h3>
       <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px;">
@@ -480,6 +593,39 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="fab-container" id="fabContainer">
+    <a href="https://wa.me/967779088003" target="_blank" class="fab fab-action fab-wa" aria-label="واتساب">
+      <img src="images/icons/whatsapp.svg" class="svg-icon" alt="واتساب">
+    </a>
+    <a href="tel:+967779088003" class="fab fab-action fab-call" aria-label="اتصال">
+      <img src="images/icons/phone.svg" class="svg-icon" alt="اتصال">
+    </a>
+    <button class="fab fab-main" id="fabMain" aria-label="تواصل سريع">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+  </div>
+
+  <!-- Bottom Navigation (mobile) -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="index.html" class="bn-item active">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V10"/></svg>
+      الرئيسية
+    </a>
+    <a href="services.html" class="bn-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      الخدمات والحالات
+    </a>
+    <a href="contact.html" class="bn-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      حجز موعد
+    </a>
+    <a href="about.html" class="bn-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      التواصل والعيادة
+    </a>
+  </nav>
 
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <img src="images/icons/arrow-up.svg" class="svg-icon" alt="">
